@@ -1,0 +1,118 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .calculator {
+            background: #222;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .display {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            text-align: right;
+            min-height: 100px;
+        }
+
+        .previous-operand {
+            color: rgba(255,255,255,0.5);
+            font-size: 1.2em;
+            min-height: 30px;
+        }
+
+        .current-operand {
+            color: white;
+            font-size: 2.5em;
+            font-weight: 300;
+            word-wrap: break-word;
+            min-height: 50px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .btn-number, .btn-decimal {
+            background: #505050;
+            color: white;
+        }
+
+        .btn-number:hover, .btn-decimal:hover {
+            background: #606060;
+        }
+
+        .btn-operator {
+            background: #ff9500;
+            color: white;
+        }
+
+        .btn-operator:hover {
+            background: #ffb143;
+        }
+
+        .btn-equals {
+            background: #ff9500;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .btn-equals:hover {
+            background: #ffb143;
+        }
+
+        .btn-clear {
+            background: #d4d4d2;
+            color: #1a1a1a;
+            grid-column: span 2;
+        }
+
+        .btn-clear:hover {
+            background: #e4e4e2;
+        }
+
+        .btn-delete {
+            background: #d4d4d2;
+            color: #1a1a1a;
+        }
+
+        .btn-delete:hover {
+            background: #e4e4e2;
+        }
+
+        .btn-zero {
+            grid-column: span 2;
+        }
